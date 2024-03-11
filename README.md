@@ -2,4 +2,5 @@
 
 add content
 
-openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout mi_dominio.key -out mi_certificado.crt
+-e JENKINS_OPTS="--httpPort=-1 --httpsPort=8443 --httpsCertificate=/certificados/tu_certificado.crt --httpsPrivateKey=/certificados/tu_llave_privada.key" \
+jenkins/jenkins:lts
