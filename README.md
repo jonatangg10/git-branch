@@ -2,3 +2,4 @@
 
 add content
 
+yum -y install nodejs
